@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Tab> tabs = new ArrayList<>();
         tabs.add(new Tab(R.layout.fragment_linear, R.string.linear));
+        tabs.add(new Tab(R.layout.fragment_linear_weight, R.string.linear_weight));
         tabs.add(new Tab(R.layout.fragment_relative, R.string.relative));
         tabs.add(new Tab(R.layout.fragment_relative_find, R.string.relative_find));
 

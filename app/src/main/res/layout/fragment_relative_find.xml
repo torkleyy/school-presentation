@@ -12,7 +12,7 @@
             android:id="@+id/textFindWhat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/editKeywords"
+            android:layout_marginTop="12dp"
             android:text="@string/findWhat"/>
 
     <EditText
