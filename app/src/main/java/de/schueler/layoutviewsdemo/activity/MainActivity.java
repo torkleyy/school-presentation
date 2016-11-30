@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         List<Tab> tabs = new ArrayList<>();
-        tabs.add(new Tab(R.layout.fragment_linear1, R.string.linear1));
-        tabs.add(new Tab(R.layout.fragment_linear1, R.string.linear1));
+        tabs.add(new Tab(R.layout.fragment_linear, R.string.linear));
+        tabs.add(new Tab(R.layout.fragment_relative, R.string.relative));
+        tabs.add(new Tab(R.layout.fragment_relative_find, R.string.relative_find));
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new DemoAdapter(getSupportFragmentManager(), tabs, this));
