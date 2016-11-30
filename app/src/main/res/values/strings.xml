@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Layout Views Demo</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="linear1">Linear Layout Simple</string>
 </resources>
