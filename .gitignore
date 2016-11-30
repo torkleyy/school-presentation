@@ -1,6 +1,9 @@
-*.iml
+# Directories
 .gradle
 .idea
 build
-local.properties
 .DS_Store
+
+# Files
+local.properties
+.~lock.*#
