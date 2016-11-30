@@ -1,7 +1,18 @@
 <resources>
-    <string name="app_name">Layout Views Demo</string>
+    <string name="appName">Layout Views Demo</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="linear1">Linear Layout Simple</string>
+    <string name="linear">Linear Layout</string>
+    <string name="register">Register</string>
+    <string name="parentRightAligned">Parent right aligned</string>
+    <string name="textAlignedWithRegister">Text aligned with register</string>
+    <string name="anotherText">Another text</string>
+    <string name="findWhat">Find what:</string>
+    <string name="keywords">Keywords</string>
+    <string name="find">Find</string>
+    <string name="matchCase">Match case</string>
+    <string name="wholeWords">Whole words</string>
+    <string name="relative">RelativeLayout</string>
+    <string name="relative_find">RelativeLayout complex</string>
 </resources>

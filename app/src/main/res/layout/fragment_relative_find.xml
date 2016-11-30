@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+            android:id="@+id/textFindWhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editKeywords"
+            android:text="@string/findWhat"/>
+
+    <EditText
+            android:id="@+id/editKeywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textFindWhat"
+            android:layout_toEndOf="@id/textFindWhat"
+            android:inputType="text"
+            android:hint="@string/keywords"/>
+
+    <CheckBox
+            android:id="@+id/checkMatchCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editKeywords"
+            android:layout_alignLeft="@id/editKeywords"
+            android:layout_alignStart="@id/editKeywords"
+            android:text="@string/matchCase"/>
+
+    <CheckBox
+            android:id="@+id/checkWholeWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkMatchCase"
+            android:layout_alignLeft="@id/checkMatchCase"
+            android:layout_alignStart="@id/checkMatchCase"
+            android:text="@string/wholeWords"/>
+
+    <Button
+            android:id="@+id/buttonFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/checkWholeWords"
+            android:text="@string/find"/>
+
+</RelativeLayout>
