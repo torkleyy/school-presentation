@@ -22,6 +22,7 @@ public class NumberDetailFragment extends Fragment {
     }
 
     private int number;
+    private TextView textView;
 
     public NumberDetailFragment() {
     }
@@ -31,6 +32,11 @@ public class NumberDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         Bundle arguments = getArguments();
+
+        if (arguments == null) {
+            return;
+        }
+
         number = arguments.getInt(KEY_NUMBER, -1);
         if (number == -1) {
             throw new RuntimeException("You have to use newInstance to instantiate the fragment");
@@ -45,7 +51,15 @@ public class NumberDetailFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        TextView textView = (TextView) view.findViewById(R.id.textInfo);
+        textView = (TextView) view.findViewById(R.id.textInfo);
+        changeNumber(number);
+        if (getArguments() == null) {
+            textView.setText(R.string.nothingToShow);
+        }
+    }
+
+    public void changeNumber(int number) {
+        this.number = number;
         textView.setText(getActivity().getString(R.string.numberText, number));
     }
 }

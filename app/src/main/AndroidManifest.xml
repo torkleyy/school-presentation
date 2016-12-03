@@ -9,7 +9,9 @@
             android:label="@string/appName"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity" android:launchMode="singleTop">
+        <activity
+                android:name=".activity.MainActivity"
+                android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -18,36 +20,39 @@
         </activity>
         <activity
                 android:name=".activity.ListActivity"
-                android:theme="@style/AppThemeActionBar"
                 android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
                 tools:ignore="UnusedAttribute">
-
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".activity.MainActivity"/>
-
         </activity>
         <activity
                 android:name=".activity.RecyclerActivity"
-                android:theme="@style/AppThemeActionBar"
                 android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
                 tools:ignore="UnusedAttribute">
-
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".activity.MainActivity"/>
-
         </activity>
         <activity
                 android:name=".activity.FabActivity"
-                android:theme="@style/AppThemeActionBar"
                 android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
                 tools:ignore="UnusedAttribute">
-
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".activity.MainActivity"/>
-
+        </activity>
+        <activity
+                android:name=".activity.NumberActivity"
+                android:parentActivityName=".activity.ListActivity"
+                android:theme="@style/AppThemeActionBar"
+                tools:ignore="UnusedAttribute">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.ListActivity"/>
         </activity>
     </application>
 

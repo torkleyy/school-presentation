@@ -19,8 +19,9 @@
     <string name="singleWeight">Single weight</string>
     <string name="linear_weight">LinearLayout weights</string>
     <string name="list">ListView</string>
-    <string name="numberText">Detail info for number %d</string>
+    <string name="numberText">Detail info for number %1$d</string>
     <string name="other">Other</string>
     <string name="recycler">RecyclerView</string>
     <string name="fab">Floating Action Button</string>
+    <string name="nothingToShow">Nothing to show</string>
 </resources>

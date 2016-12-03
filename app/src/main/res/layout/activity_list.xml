@@ -4,10 +4,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="de.schueler.layoutviewsdemo.activity.ListActivity">
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_list"
+            class="de.schueler.layoutviewsdemo.fragment.NumberListFragment"
+            android:id="@+id/fragmentNumberList"/>
 
 </RelativeLayout>
