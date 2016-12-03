@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import de.schueler.layoutviewsdemo.R;
+import de.schueler.layoutviewsdemo.view.NumberLine;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 public class NumberDetailFragment extends Fragment {
@@ -23,6 +24,7 @@ public class NumberDetailFragment extends Fragment {
 
     private int number;
     private TextView textView;
+    private NumberLine numberLine;
 
     public NumberDetailFragment() {
     }
@@ -52,6 +54,7 @@ public class NumberDetailFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         textView = (TextView) view.findViewById(R.id.textInfo);
+        numberLine = (NumberLine) view.findViewById(R.id.numberLine);
         changeNumber(number);
         if (getArguments() == null) {
             textView.setText(R.string.nothingToShow);
@@ -61,5 +64,6 @@ public class NumberDetailFragment extends Fragment {
     public void changeNumber(int number) {
         this.number = number;
         textView.setText(getActivity().getString(R.string.numberText, number));
+        numberLine.setNumber(number);
     }
 }
