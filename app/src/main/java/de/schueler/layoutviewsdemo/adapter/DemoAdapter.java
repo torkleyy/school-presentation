@@ -22,7 +22,7 @@ public class DemoAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Tab tab = tabs.get(position);
-        return CustomFragment.newInstance(tab.getLayoutId());
+        return CustomFragment.newInstance(tab.getLayoutId(), tab.getHandlerId());
     }
 
     @Override

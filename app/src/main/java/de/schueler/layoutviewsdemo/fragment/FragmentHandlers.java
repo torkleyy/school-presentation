@@ -8,16 +8,6 @@ import java.util.List;
 
 public final class FragmentHandlers {
     public static final class HandlerId implements Parcelable {
-        private final int id;
-
-        private HandlerId(int id) {
-            this.id = id;
-        }
-
-        protected HandlerId(Parcel in) {
-            id = in.readInt();
-        }
-
         public static final Creator<HandlerId> CREATOR = new Creator<HandlerId>() {
             @Override
             public HandlerId createFromParcel(Parcel in) {
@@ -29,6 +19,20 @@ public final class FragmentHandlers {
                 return new HandlerId[size];
             }
         };
+
+        private final int id;
+
+        private HandlerId(int id) {
+            this.id = id;
+        }
+
+        protected HandlerId(Parcel in) {
+            id = in.readInt();
+        }
+
+        public FragmentHandler dereference() {
+            return handlers.get(id);
+        }
 
         @Override
         public int describeContents() {
@@ -42,10 +46,6 @@ public final class FragmentHandlers {
     }
 
     private static final List<FragmentHandler> handlers = new ArrayList<>();
-
-    public static FragmentHandler get(HandlerId id) {
-        return handlers.get(id.id);
-    }
 
     public static HandlerId put(FragmentHandler handler) {
         HandlerId handlerId = new HandlerId(handlers.size());
