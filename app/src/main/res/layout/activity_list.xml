@@ -6,9 +6,11 @@
         android:layout_height="match_parent"
         tools:context="de.schueler.layoutviewsdemo.activity.ListActivity">
 
-    <ListView
-            android:id="@+id/listView"
+    <fragment
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_list"
+            class="de.schueler.layoutviewsdemo.fragment.NumberListFragment"
+            android:id="@+id/fragmentNumberList"/>
 
 </RelativeLayout>

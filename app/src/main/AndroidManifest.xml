@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="de.schueler.layoutviewsdemo">
 
     <application
@@ -8,12 +9,50 @@
             android:label="@string/appName"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity
+                android:name=".activity.MainActivity"
+                android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.ListActivity"
+                android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
+                tools:ignore="UnusedAttribute">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.RecyclerActivity"
+                android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
+                tools:ignore="UnusedAttribute">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.FabActivity"
+                android:parentActivityName=".activity.MainActivity"
+                android:theme="@style/AppThemeActionBar"
+                tools:ignore="UnusedAttribute">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".activity.NumberActivity"
+                android:parentActivityName=".activity.ListActivity"
+                android:theme="@style/AppThemeActionBar"
+                tools:ignore="UnusedAttribute">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".activity.ListActivity"/>
         </activity>
     </application>
 
