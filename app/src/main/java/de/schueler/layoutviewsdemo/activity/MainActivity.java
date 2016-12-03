@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         tabs.addTab(R.layout.fragment_linear_weight, R.string.linear_weight, LinearWeightHandler.register());
         tabs.addTab(R.layout.fragment_relative, R.string.relative, RelativeHandler.register());
         tabs.addTab(R.layout.fragment_relative_find, R.string.relative_find, RelativeComplexHandler.register());
+        tabs.addTab(R.layout.fragment_other, R.string.other, OtherHandler.register());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new DemoAdapter(getSupportFragmentManager(), tabs, this));
