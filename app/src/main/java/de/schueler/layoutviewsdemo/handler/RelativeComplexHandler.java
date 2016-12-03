@@ -16,11 +16,9 @@ public class RelativeComplexHandler implements FragmentHandler {
 
     @Override
     public void onCreate(Context context, Bundle savedInstanceState) {
-        System.out.println("onCreate RelativeComplexHandler");
     }
 
     @Override
     public void onViewCreated(Context context, View view, Bundle savedInstanceState) {
-        System.out.println("onViewCreated RelativeComplexHandler");
     }
 }

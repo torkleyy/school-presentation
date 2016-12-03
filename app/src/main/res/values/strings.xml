@@ -18,4 +18,6 @@
     <string name="doubleWeight">Double weight</string>
     <string name="singleWeight">Single weight</string>
     <string name="linear_weight">LinearLayout weights</string>
+    <string name="list">ListView</string>
+    <string name="numberText">Detail info for number %d</string>
 </resources>

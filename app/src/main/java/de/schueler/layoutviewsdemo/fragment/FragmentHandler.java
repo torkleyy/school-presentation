@@ -6,5 +6,6 @@ import android.view.View;
 
 public interface FragmentHandler {
     void onCreate(Context context, Bundle savedInstanceState);
+
     void onViewCreated(Context context, View view, Bundle savedInstanceState);
 }

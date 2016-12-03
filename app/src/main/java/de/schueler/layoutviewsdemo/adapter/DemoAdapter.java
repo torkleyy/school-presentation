@@ -5,15 +5,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import de.schueler.layoutviewsdemo.data.Tab;
+import de.schueler.layoutviewsdemo.data.Tabs;
 import de.schueler.layoutviewsdemo.fragment.CustomFragment;
 
-import java.util.List;
-
 public class DemoAdapter extends FragmentPagerAdapter {
-    private final List<Tab> tabs;
+    private final Tabs tabs;
     private final Context context;
 
-    public DemoAdapter(FragmentManager fm, List<Tab> tabs, Context context) {
+    public DemoAdapter(FragmentManager fm, Tabs tabs, Context context) {
         super(fm);
         this.tabs = tabs;
         this.context = context;
