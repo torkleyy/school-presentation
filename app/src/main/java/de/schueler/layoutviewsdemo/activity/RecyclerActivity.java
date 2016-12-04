@@ -21,6 +21,7 @@ public class RecyclerActivity extends AppCompatActivity {
 
         List<Topic> topics = new ArrayList<>();
         topics.add(new Topic(R.string.github, R.mipmap.github, R.string.githubDesc));
+        topics.add(new Topic(R.string.cpp, R.mipmap.cpp_logo, R.string.cppDesc));
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
