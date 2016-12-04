@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="numberLine">Zahlenstrahl:</string>
+    <string name="anotherText">Wieder Text</string>
+    <string name="appName">Layout / Views Demo</string>
+    <string name="cpp">C++</string>
+    <string name="cppDesc">C++ ist eine Programmiersprache mit low-level und high-level Konzepten</string>
+    <string name="doubleWeight">Doppelter weight-Wert</string>
+    <string name="fab">Floating Action Button</string>
+    <string name="find">Finden</string>
+    <string name="findWhat">Suche eingeben:</string>
+    <string name="github">GitHub</string>
+    <string name="githubDesc">GitHub ist ein Versionskontrollsystem für Softwareprojekte</string>
+    <string name="keywords">Suchbegriffe</string>
+    <string name="linear">LinearLayout</string>
+    <string name="linearWeight">LinearLayout weight</string>
+    <string name="list">ListView</string>
+    <string name="login">Anmelden</string>
+    <string name="matchCase">Groß/Kleinschreibung beachten</string>
+    <string name="nothingToShow">Nichts ausgewählt</string>
+    <string name="numFabClicks">Der Floating Action Button wurde %d mal gedrückt</string>
+    <string name="numberText">Informationen zur Zahl %1$d</string>
+    <string name="other">Anderes</string>
+    <string name="parentRightAligned">"Parent right"-ausgerichtet</string>
+    <string name="password">Passwort</string>
+    <string name="recycler">RecyclerView</string>
+    <string name="register">Registrieren</string>
+    <string name="relative">RelativeLayout</string>
+    <string name="relative_find">RelativeLayout erweitert</string>
+    <string name="rust">Rust</string>
+    <string name="rustDesc">Rust ist eine Systemprogrammiersprache, die schnell läuft, Segmentation faults verhindert und Threadsicherheit garanitert</string>
+    <string name="singleWeight">Einfacher weight-Wert</string>
+    <string name="textAlignedWithRegister">Text ausgerichtet an "Registrieren"</string>
+    <string name="topicImage">Themenbild</string>
+    <string name="username">Benutzername</string>
+    <string name="wholeWords">Ganze Wörter</string>
+</resources>
