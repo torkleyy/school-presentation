@@ -21,6 +21,6 @@ public class RecyclerActivity extends AppCompatActivity {
         List<Topic> topics = new ArrayList<>();
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setAdapter(new RecyclerAdapter(this, topics));
+        recyclerView.setAdapter(new RecyclerAdapter(topics));
     }
 }

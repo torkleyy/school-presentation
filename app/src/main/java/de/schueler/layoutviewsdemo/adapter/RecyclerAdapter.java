@@ -1,6 +1,5 @@
 package de.schueler.layoutviewsdemo.adapter;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +10,9 @@ import de.schueler.layoutviewsdemo.data.Topic;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<TopicViewHolder> {
-    private final Context context;
     private final List<Topic> topics;
 
-    public RecyclerAdapter(Context context, List<Topic> topics) {
-        this.context = context;
+    public RecyclerAdapter(List<Topic> topics) {
         this.topics = topics;
     }
 
@@ -28,7 +25,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<TopicViewHolder> {
 
     @Override
     public void onBindViewHolder(TopicViewHolder holder, int position) {
-        holder.onDataSetChanged(context, topics.get(position));
+        holder.onDataSetChanged(topics.get(position));
     }
 
     @Override

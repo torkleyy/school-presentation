@@ -25,4 +25,5 @@
     <string name="fab">Floating Action Button</string>
     <string name="nothingToShow">Nothing to show</string>
     <string name="numberLine">Number line:</string>
+    <string name="topicImage">Topic image</string>
 </resources>
