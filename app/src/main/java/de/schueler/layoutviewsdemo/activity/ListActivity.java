@@ -9,6 +9,8 @@ import de.schueler.layoutviewsdemo.fragment.NumberEmptyFragment;
 import de.schueler.layoutviewsdemo.fragment.NumberListFragment;
 
 public class ListActivity extends AppCompatActivity implements NumberListFragment.Listener {
+    static final String KEY_NUM = ListActivity.class.getName() + ".NUM";
+
     private boolean twoPaneMode;
     private NumberDetailFragment detailFragment;
 
@@ -24,6 +26,13 @@ public class ListActivity extends AppCompatActivity implements NumberListFragmen
                     .beginTransaction()
                     .add(R.id.frameLayout, NumberEmptyFragment.newInstance())
                     .commit();
+        }
+
+        Intent intent = getIntent();
+        int number = intent.getIntExtra(KEY_NUM, -1);
+        if (number != -1) {
+            intent.removeExtra(KEY_NUM);
+            onClickItem(number);
         }
     }
 

@@ -46,8 +46,13 @@ public class NumberDetailFragment extends Fragment {
         }
 
         created = true;
+    }
 
-        changeNumber(number);
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        created = false;
     }
 
     @Nullable
