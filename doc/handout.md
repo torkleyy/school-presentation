@@ -12,3 +12,6 @@
 * https://assets-cdn.github.com/images/modules/open_graph/github-mark.png (zuletzt geprüft am 4.12.2016)
 * https://isocpp.org/images/uploads/logo-sun.jpg (zuletzt geprüft am 4.12.2016)
 * https://www.rust-lang.org/logos/rust-logo-blk.svg (zuletzt geprüft am 4.12.2016)
+* https://material.google.com/components/buttons-floating-action-button.html (zuletzt geprüft am 4.12.2016)
+* http://www.androidhive.info/2015/12/android-material-design-floating-action-button/ (zuletzt geprüft am 4.12.2016)
+* https://material.io/icons/ (zuletzt geprüft am 4.12.2016)
