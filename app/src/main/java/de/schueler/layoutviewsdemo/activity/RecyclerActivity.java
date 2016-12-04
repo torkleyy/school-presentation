@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +20,9 @@ public class RecyclerActivity extends AppCompatActivity {
         List<Topic> topics = new ArrayList<>();
         topics.add(new Topic(R.string.github, R.mipmap.github, R.string.githubDesc));
         topics.add(new Topic(R.string.cpp, R.mipmap.cpp_logo, R.string.cppDesc));
+        topics.add(new Topic(R.string.rust, R.mipmap.rust_logo, R.string.rustDesc));
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new RecyclerAdapter(topics));
     }

@@ -11,3 +11,4 @@
 * https://developer.android.com/training/material/lists-cards.html (zuletzt geprüft am 4.12.2016)
 * https://assets-cdn.github.com/images/modules/open_graph/github-mark.png (zuletzt geprüft am 4.12.2016)
 * https://isocpp.org/images/uploads/logo-sun.jpg (zuletzt geprüft am 4.12.2016)
+* https://www.rust-lang.org/logos/rust-logo-blk.svg (zuletzt geprüft am 4.12.2016)

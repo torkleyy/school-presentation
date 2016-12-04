@@ -30,4 +30,6 @@
     <string name="githubDesc">GitHub is a version control system for software projects</string>
     <string name="cpp">C++</string>
     <string name="cppDesc">C++ is a programming language with both low and high level features</string>
+    <string name="rust">Rust</string>
+    <string name="rustDesc">Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety</string>
 </resources>
