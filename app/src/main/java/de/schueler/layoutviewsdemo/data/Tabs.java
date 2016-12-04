@@ -5,7 +5,7 @@ import de.schueler.layoutviewsdemo.fragment.FragmentHandlers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tabs {
+public final class Tabs {
     private final List<Tab> tabs;
 
     public Tabs() {

@@ -25,4 +25,11 @@
     <string name="fab">Floating Action Button</string>
     <string name="nothingToShow">Nothing to show</string>
     <string name="numberLine">Number line:</string>
+    <string name="topicImage">Topic image</string>
+    <string name="github">GitHub</string>
+    <string name="githubDesc">GitHub is a version control system for software projects</string>
+    <string name="cpp">C++</string>
+    <string name="cppDesc">C++ is a programming language with both low and high level features</string>
+    <string name="rust">Rust</string>
+    <string name="rustDesc">Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety</string>
 </resources>

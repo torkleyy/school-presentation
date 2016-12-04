@@ -4,7 +4,7 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
 import de.schueler.layoutviewsdemo.fragment.FragmentHandlers;
 
-public class Tab {
+public final class Tab {
     @LayoutRes
     private final int layoutId;
     @StringRes
