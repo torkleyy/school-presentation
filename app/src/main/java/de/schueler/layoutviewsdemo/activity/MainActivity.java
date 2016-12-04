@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import de.schueler.layoutviewsdemo.R;
-import de.schueler.layoutviewsdemo.adapter.DemoAdapter;
+import de.schueler.layoutviewsdemo.adapter.ListAdapter;
 import de.schueler.layoutviewsdemo.data.Tabs;
 import de.schueler.layoutviewsdemo.handler.*;
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tabs.addTab(R.layout.fragment_other, R.string.other, OtherHandler.register());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
-        viewPager.setAdapter(new DemoAdapter(getSupportFragmentManager(), tabs, this));
+        viewPager.setAdapter(new ListAdapter(getSupportFragmentManager(), tabs, this));
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);

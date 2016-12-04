@@ -8,11 +8,11 @@ import de.schueler.layoutviewsdemo.data.Tab;
 import de.schueler.layoutviewsdemo.data.Tabs;
 import de.schueler.layoutviewsdemo.fragment.CustomFragment;
 
-public class DemoAdapter extends FragmentPagerAdapter {
+public class ListAdapter extends FragmentPagerAdapter {
     private final Tabs tabs;
     private final Context context;
 
-    public DemoAdapter(FragmentManager fm, Tabs tabs, Context context) {
+    public ListAdapter(FragmentManager fm, Tabs tabs, Context context) {
         super(fm);
         this.tabs = tabs;
         this.context = context;
