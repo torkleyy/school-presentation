@@ -22,11 +22,14 @@ public class NumberDetailFragment extends Fragment {
         return fragment;
     }
 
+    private boolean created;
     private int number;
     private TextView textView;
     private NumberLine numberLine;
 
     public NumberDetailFragment() {
+        created = false;
+        number = -1;
     }
 
     @Override
@@ -35,14 +38,16 @@ public class NumberDetailFragment extends Fragment {
 
         Bundle arguments = getArguments();
 
-        if (arguments == null) {
-            return;
+        if (arguments != null && number == -1) {
+            number = arguments.getInt(KEY_NUMBER, -1);
+            if (number == -1) {
+                throw new RuntimeException("You have to use newInstance to instantiate the fragment");
+            }
         }
 
-        number = arguments.getInt(KEY_NUMBER, -1);
-        if (number == -1) {
-            throw new RuntimeException("You have to use newInstance to instantiate the fragment");
-        }
+        created = true;
+
+        changeNumber(number);
     }
 
     @Nullable
@@ -56,13 +61,15 @@ public class NumberDetailFragment extends Fragment {
         textView = (TextView) view.findViewById(R.id.textInfo);
         numberLine = (NumberLine) view.findViewById(R.id.numberLine);
         changeNumber(number);
-        if (getArguments() == null) {
-            textView.setText(R.string.nothingToShow);
-        }
     }
 
     public void changeNumber(int number) {
         this.number = number;
+
+        if(!created) {
+            return;
+        }
+
         textView.setText(getActivity().getString(R.string.numberText, number));
         numberLine.setNumber(number);
     }

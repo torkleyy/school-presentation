@@ -20,12 +20,10 @@
             android:layout_height="match_parent"
             android:background="@color/colorPrimaryDark"/>
 
-    <fragment
+    <FrameLayout
+            android:id="@+id/frameLayout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            class="de.schueler.layoutviewsdemo.fragment.NumberDetailFragment"
-            android:id="@+id/fragmentNumberDetail"
-            tools:layout="@layout/fragment_number_detail"/>
+            android:layout_weight="1"/>
 
 </LinearLayout>
