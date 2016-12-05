@@ -19,3 +19,6 @@ Das `RelativeLayout` ist
 * https://material.google.com/components/buttons-floating-action-button.html (zuletzt geprüft am 4.12.2016)
 * http://www.androidhive.info/2015/12/android-material-design-floating-action-button/ (zuletzt geprüft am 4.12.2016)
 * https://material.io/icons/ (zuletzt geprüft am 4.12.2016)
+* https://developer.android.com/training/material/lists-cards.html (zuletzt geprüft am 5.12.2016)
+* https://developer.android.com/guide/topics/ui/layout/recyclerview.html (zuletzt geprüft am 5.12.2016)
+*https://material.google.com/components/buttons-floating-action-button.html#buttons-floating-action-button-floating-action-button (zuletzt geprüft am 5.12.2016)
