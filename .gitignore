@@ -7,3 +7,5 @@ build
 # Files
 local.properties
 .~lock.*#
+app/app.iml
+school-presentation.iml
