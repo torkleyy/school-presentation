@@ -54,6 +54,8 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".activity.ListActivity"/>
         </activity>
+        <activity android:name=".activity.BasicActivity">
+        </activity>
     </application>
 
 </manifest>

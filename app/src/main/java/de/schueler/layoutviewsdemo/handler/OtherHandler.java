@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import de.schueler.layoutviewsdemo.R;
+import de.schueler.layoutviewsdemo.activity.BasicActivity;
 import de.schueler.layoutviewsdemo.activity.FabActivity;
 import de.schueler.layoutviewsdemo.activity.ListActivity;
 import de.schueler.layoutviewsdemo.activity.RecyclerActivity;
@@ -31,10 +32,12 @@ public class OtherHandler implements FragmentHandler, View.OnClickListener {
         Button buttonList = (Button) view.findViewById(R.id.buttonList);
         Button buttonRecycler = (Button) view.findViewById(R.id.buttonRecycler);
         Button buttonFab = (Button) view.findViewById(R.id.buttonFab);
+        Button buttonBasic = (Button) view.findViewById(R.id.buttonBasic);
 
         buttonList.setOnClickListener(this);
         buttonRecycler.setOnClickListener(this);
         buttonFab.setOnClickListener(this);
+        buttonBasic.setOnClickListener(this);
     }
 
     @Override
@@ -52,6 +55,9 @@ public class OtherHandler implements FragmentHandler, View.OnClickListener {
                 break;
             case R.id.buttonFab:
                 intent = new Intent(context, FabActivity.class);
+                break;
+            case R.id.buttonBasic:
+                intent = new Intent(context, BasicActivity.class);
                 break;
             default:
                 throw new RuntimeException();
