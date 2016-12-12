@@ -13,10 +13,7 @@ public class NumberLine extends View {
     private static final String ZERO_STRING = String.valueOf(0);
 
     private int textColor;
-    private int hightlightColor;
     private int number;
-
-    private int numberMax;
 
     private int width;
     private int height;
@@ -32,7 +29,7 @@ public class NumberLine extends View {
     private String numberMaxString;
     private String numberMinString;
 
-    private final Paint hightlightPaint;
+    private final Paint highlightPaint;
     private final Paint textPaint;
     private final Paint hLinePaint;
     private final Paint vLinePaint;
@@ -40,18 +37,19 @@ public class NumberLine extends View {
     public NumberLine(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
-        TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.NumberLine, 0, 0);
+TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.NumberLine, 0, 0);
 
+        int highlightColor = 0;
         try {
-            textColor = array.getColor(R.styleable.NumberLine_textColor, 0);
-            hightlightColor = array.getColor(R.styleable.NumberLine_highlightColor, 0xFFFF0000);
-        } finally {
-            array.recycle();
-        }
+    textColor = array.getColor(R.styleable.NumberLine_textColor, 0);
+    highlightColor = array.getColor(R.styleable.NumberLine_highlightColor, 0xFFFF0000);
+} finally {
+    array.recycle();
+}
 
-        hightlightPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        hightlightPaint.setColor(hightlightColor);
-        hightlightPaint.setTextSize(18);
+        highlightPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        highlightPaint.setColor(highlightColor);
+        highlightPaint.setTextSize(18);
 
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         textPaint.setColor(textColor);
@@ -107,7 +105,7 @@ public class NumberLine extends View {
         }
         canvas.drawText(numberMinString, startVLine - 5, height, textPaint);
         canvas.drawText(numberMaxString, endVLine - 5, height, textPaint);
-        canvas.drawText(numberString, numberVLineX - 5, height, hightlightPaint);
+        canvas.drawText(numberString, numberVLineX - 5, height, highlightPaint);
     }
 
     public int getTextColor() {
@@ -126,7 +124,7 @@ public class NumberLine extends View {
 
     public void setNumber(int number) {
         this.number = number;
-        numberMax = 2 * Math.abs(number);
+        int numberMax = 2 * Math.abs(number);
         if (number == 0) {
             numberMax = 1;
         }
